@@ -35,7 +35,7 @@ export default function ContactForm() {
           'Content-Type': 'application/json',
         },
         body: JSON.stringify({
-          access_key: '8425578c-a5d4-46e0-beac-04c8073da365', // Reemplaza esto con tu clave de Web3Forms
+          access_key: '8425578c-a5d4-46e0-beac-04c8073da365',
           from_name: formData.name,
           subject: formData.subject,
           message: formData.message,
@@ -52,7 +52,6 @@ export default function ContactForm() {
           info: { error: false, msg: '¡Gracias! Tu mensaje ha sido enviado.' }
         });
 
-        // Limpiar el formulario
         setFormData({
           name: '',
           email: '',
@@ -70,7 +69,6 @@ export default function ContactForm() {
       });
     }
 
-    // Limpiar el mensaje después de 3 segundos
     setTimeout(() => {
       setStatus(prevStatus => ({
         ...prevStatus,
@@ -93,7 +91,7 @@ export default function ContactForm() {
             value={formData.name}
             onChange={handleChange}
             required
-            className="w-full px-4 py-3 rounded-lg bg-[#1A1625] border border-[#2D2B3A] text-white focus:outline-none focus:ring-2 focus:ring-purple-500 focus:border-transparent transition-all"
+            className="w-full px-4 py-3 rounded-lg bg-[#1E2A5A]/50 border border-[#2D4A8A] text-white focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all placeholder-gray-400"
             placeholder="Tu nombre"
           />
         </div>
@@ -109,7 +107,7 @@ export default function ContactForm() {
             value={formData.email}
             onChange={handleChange}
             required
-            className="w-full px-4 py-3 rounded-lg bg-[#1A1625] border border-[#2D2B3A] text-white focus:outline-none focus:ring-2 focus:ring-purple-500 focus:border-transparent transition-all"
+            className="w-full px-4 py-3 rounded-lg bg-[#1E2A5A]/50 border border-[#2D4A8A] text-white focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all placeholder-gray-400"
             placeholder="tu@email.com"
           />
         </div>
@@ -126,7 +124,7 @@ export default function ContactForm() {
           value={formData.subject}
           onChange={handleChange}
           required
-          className="w-full px-4 py-3 rounded-lg bg-[#1A1625] border border-[#2D2B3A] text-white focus:outline-none focus:ring-2 focus:ring-purple-500 focus:border-transparent transition-all"
+          className="w-full px-4 py-3 rounded-lg bg-[#1E2A5A]/50 border border-[#2D4A8A] text-white focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all placeholder-gray-400"
           placeholder="¿Sobre qué quieres hablar?"
         />
       </div>
@@ -142,7 +140,7 @@ export default function ContactForm() {
           onChange={handleChange}
           required
           rows={6}
-          className="w-full px-4 py-3 rounded-lg bg-[#1A1625] border border-[#2D2B3A] text-white focus:outline-none focus:ring-2 focus:ring-purple-500 focus:border-transparent transition-all resize-none"
+          className="w-full px-4 py-3 rounded-lg bg-[#1E2A5A]/50 border border-[#2D4A8A] text-white focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all resize-none placeholder-gray-400"
           placeholder="Escribe tu mensaje aquí..."
         />
       </div>
@@ -151,7 +149,7 @@ export default function ContactForm() {
         <button
           type="submit"
           disabled={status.submitting}
-          className="px-8 py-3 bg-purple-600 hover:bg-purple-700 text-white rounded-lg font-medium transition-colors disabled:opacity-50 disabled:cursor-not-allowed flex items-center gap-2"
+          className="px-8 py-3 bg-blue-600 hover:bg-blue-700 text-white rounded-lg font-medium transition-colors disabled:opacity-50 disabled:cursor-not-allowed flex items-center gap-2 shadow-lg shadow-blue-500/20"
         >
           {status.submitting ? (
             <>

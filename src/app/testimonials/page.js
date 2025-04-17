@@ -1,8 +1,9 @@
 'use client';
 
 import { motion } from "framer-motion";
-import TestimonialCard from "../components/TestimonialCard";
-import Navbar from "../components/Navbar";
+import TestimonialCard from "../../components/TestimonialCard";
+import Navbar from "../../components/Navbar";
+import Footer from "../../components/Footer";
 
 const testimonials = [
   {
@@ -66,6 +67,7 @@ export default function Testimonials() {
           </div>
         </motion.div>
       </main>
+      <Footer />
     </div>
   );
 }

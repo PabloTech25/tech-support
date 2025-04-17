@@ -1,8 +1,9 @@
 'use client';
 
 import { motion } from "framer-motion";
-import Navbar from "../components/Navbar";
-import ContactForm from "../components/ContactForm";
+import Navbar from "../../components/Navbar";
+import Footer from "../../components/Footer";
+import ContactForm from "../../components/ContactForm";
 
 export default function Contact() {
   return (
@@ -60,6 +61,7 @@ export default function Contact() {
           </div>
         </motion.div>
       </main>
+      <Footer />
     </div>
   );
 }

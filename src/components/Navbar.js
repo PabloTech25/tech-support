@@ -88,8 +88,8 @@ export default function Navbar() {
                 ))}
               </div>
             </div>
-            <NavLink href="/proyectos">Proyectos</NavLink>
-            <NavLink href="/testimonios">Testimonios</NavLink>
+            <NavLink href="/projects">Proyectos</NavLink>
+            <NavLink href="/testimonials">Testimonios</NavLink>
             <NavLink href="/contact">Contacto</NavLink>
           </div>
 
@@ -176,10 +176,10 @@ export default function Navbar() {
                     )}
                   </AnimatePresence>
                 </div>
-                <MobileNavLink href="/proyectos" onClick={handleMobileLinkClick}>
+                <MobileNavLink href="/projects" onClick={handleMobileLinkClick}>
                   Proyectos
                 </MobileNavLink>
-                <MobileNavLink href="/testimonios" onClick={handleMobileLinkClick}>
+                <MobileNavLink href="/testimonials" onClick={handleMobileLinkClick}>
                   Testimonios
                 </MobileNavLink>
                 <MobileNavLink href="/contact" onClick={handleMobileLinkClick}>

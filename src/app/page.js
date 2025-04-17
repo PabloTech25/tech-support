@@ -3,8 +3,8 @@
 import { motion } from "framer-motion";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
-import Contact from "../app/contact";
-{/*import About from "../app/about";
+{/*import Contact from "../app/contact/page";
+import About from "../app/about";
 import Services from "../app/services";
 import Projects from "../app/projects";
 import Testimonials from "../app/testimonials";*/}
@@ -216,9 +216,8 @@ export default function Home() {
           backdrop-filter: blur(10px);
         }
       `}</style>
-
+     {/* Resto de secciones
       <Contact />
-      {/* Resto de secciones 
       <About />
       <Services />
       <Projects />

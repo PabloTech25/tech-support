@@ -1,8 +1,9 @@
 'use client';
 
 import { motion } from "framer-motion";
-import Navbar from "../components/Navbar";
-import ProjectCard from "../components/ProjectCard";
+import Navbar from "../../components/Navbar";
+import Footer from "../../components/Footer";
+import ProjectCard from "../../components/ProjectCard";
 
 const projects = [
   {
@@ -65,6 +66,7 @@ export default function Projects() {
           </div>
         </motion.div>
       </main>
+      <Footer />
     </div>
   );
 } 
